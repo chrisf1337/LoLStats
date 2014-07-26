@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39F46A3719808A04001C2020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A3619808A04001C2020 /* Foundation.framework */; };
+		39F46A3919808A04001C2020 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A3819808A04001C2020 /* CoreGraphics.framework */; };
+		39F46A3B19808A04001C2020 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A3A19808A04001C2020 /* UIKit.framework */; };
+		39F46A4119808A04001C2020 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39F46A3F19808A04001C2020 /* InfoPlist.strings */; };
+		39F46A4319808A04001C2020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A4219808A04001C2020 /* main.m */; };
+		39F46A4719808A04001C2020 /* CFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A4619808A04001C2020 /* CFAppDelegate.m */; };
+		39F46A4A19808A04001C2020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F46A4819808A04001C2020 /* Main.storyboard */; };
+		39F46A4D19808A04001C2020 /* CFSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A4C19808A04001C2020 /* CFSearchViewController.m */; };
+		39F46A4F19808A04001C2020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F46A4E19808A04001C2020 /* Images.xcassets */; };
+		39F46A5619808A04001C2020 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A5519808A04001C2020 /* XCTest.framework */; };
+		39F46A5719808A04001C2020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A3619808A04001C2020 /* Foundation.framework */; };
+		39F46A5819808A04001C2020 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F46A3A19808A04001C2020 /* UIKit.framework */; };
+		39F46A6019808A04001C2020 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39F46A5E19808A04001C2020 /* InfoPlist.strings */; };
+		39F46A6219808A04001C2020 /* LoLStatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A6119808A04001C2020 /* LoLStatsTests.m */; };
+		39F46A6D198218A2001C2020 /* CFSummonerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A6C198218A2001C2020 /* CFSummonerDetailViewController.m */; };
+		39F46A6F19821AFC001C2020 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F46A6E19821AFC001C2020 /* 20.png */; };
+		39F46A7219821D01001C2020 /* UIImage+UIImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F46A7119821D01001C2020 /* UIImage+UIImageAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39F46A5919808A04001C2020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39F46A2B19808A03001C2020 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39F46A3219808A04001C2020;
+			remoteInfo = LoLStats;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39818FB419832F4300E4E048 /* apikey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apikey.h; sourceTree = "<group>"; };
+		39F46A3319808A04001C2020 /* LoLStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F46A3619808A04001C2020 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39F46A3819808A04001C2020 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39F46A3A19808A04001C2020 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39F46A3E19808A04001C2020 /* LoLStats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoLStats-Info.plist"; sourceTree = "<group>"; };
+		39F46A4019808A04001C2020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39F46A4219808A04001C2020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39F46A4419808A04001C2020 /* LoLStats-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoLStats-Prefix.pch"; sourceTree = "<group>"; };
+		39F46A4519808A04001C2020 /* CFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAppDelegate.h; sourceTree = "<group>"; };
+		39F46A4619808A04001C2020 /* CFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAppDelegate.m; sourceTree = "<group>"; };
+		39F46A4919808A04001C2020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39F46A4B19808A04001C2020 /* CFSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFSearchViewController.h; sourceTree = "<group>"; };
+		39F46A4C19808A04001C2020 /* CFSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFSearchViewController.m; sourceTree = "<group>"; };
+		39F46A4E19808A04001C2020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39F46A5419808A04001C2020 /* LoLStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLStatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F46A5519808A04001C2020 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		39F46A5D19808A04001C2020 /* LoLStatsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoLStatsTests-Info.plist"; sourceTree = "<group>"; };
+		39F46A5F19808A04001C2020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39F46A6119808A04001C2020 /* LoLStatsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoLStatsTests.m; sourceTree = "<group>"; };
+		39F46A6B198218A2001C2020 /* CFSummonerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSummonerDetailViewController.h; sourceTree = "<group>"; };
+		39F46A6C198218A2001C2020 /* CFSummonerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSummonerDetailViewController.m; sourceTree = "<group>"; };
+		39F46A6E19821AFC001C2020 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		39F46A7019821D01001C2020 /* UIImage+UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageAdditions.h"; sourceTree = "<group>"; };
+		39F46A7119821D01001C2020 /* UIImage+UIImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39F46A3019808A04001C2020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A3919808A04001C2020 /* CoreGraphics.framework in Frameworks */,
+				39F46A3B19808A04001C2020 /* UIKit.framework in Frameworks */,
+				39F46A3719808A04001C2020 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F46A5119808A04001C2020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A5619808A04001C2020 /* XCTest.framework in Frameworks */,
+				39F46A5819808A04001C2020 /* UIKit.framework in Frameworks */,
+				39F46A5719808A04001C2020 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39F46A2A19808A03001C2020 = {
+			isa = PBXGroup;
+			children = (
+				39F46A3C19808A04001C2020 /* LoLStats */,
+				39F46A5B19808A04001C2020 /* LoLStatsTests */,
+				39F46A3519808A04001C2020 /* Frameworks */,
+				39F46A3419808A04001C2020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39F46A3419808A04001C2020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A3319808A04001C2020 /* LoLStats.app */,
+				39F46A5419808A04001C2020 /* LoLStatsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39F46A3519808A04001C2020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A3619808A04001C2020 /* Foundation.framework */,
+				39F46A3819808A04001C2020 /* CoreGraphics.framework */,
+				39F46A3A19808A04001C2020 /* UIKit.framework */,
+				39F46A5519808A04001C2020 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39F46A3C19808A04001C2020 /* LoLStats */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A4519808A04001C2020 /* CFAppDelegate.h */,
+				39F46A4619808A04001C2020 /* CFAppDelegate.m */,
+				39F46A7019821D01001C2020 /* UIImage+UIImageAdditions.h */,
+				39F46A7119821D01001C2020 /* UIImage+UIImageAdditions.m */,
+				39F46A4819808A04001C2020 /* Main.storyboard */,
+				39F46A4B19808A04001C2020 /* CFSearchViewController.h */,
+				39F46A4C19808A04001C2020 /* CFSearchViewController.m */,
+				39F46A6B198218A2001C2020 /* CFSummonerDetailViewController.h */,
+				39F46A6C198218A2001C2020 /* CFSummonerDetailViewController.m */,
+				39818FB419832F4300E4E048 /* apikey.h */,
+				39F46A4E19808A04001C2020 /* Images.xcassets */,
+				39F46A3D19808A04001C2020 /* Supporting Files */,
+			);
+			path = LoLStats;
+			sourceTree = "<group>";
+		};
+		39F46A3D19808A04001C2020 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A6E19821AFC001C2020 /* 20.png */,
+				39F46A3E19808A04001C2020 /* LoLStats-Info.plist */,
+				39F46A3F19808A04001C2020 /* InfoPlist.strings */,
+				39F46A4219808A04001C2020 /* main.m */,
+				39F46A4419808A04001C2020 /* LoLStats-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39F46A5B19808A04001C2020 /* LoLStatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A6119808A04001C2020 /* LoLStatsTests.m */,
+				39F46A5C19808A04001C2020 /* Supporting Files */,
+			);
+			path = LoLStatsTests;
+			sourceTree = "<group>";
+		};
+		39F46A5C19808A04001C2020 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39F46A5D19808A04001C2020 /* LoLStatsTests-Info.plist */,
+				39F46A5E19808A04001C2020 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39F46A3219808A04001C2020 /* LoLStats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39F46A6519808A04001C2020 /* Build configuration list for PBXNativeTarget "LoLStats" */;
+			buildPhases = (
+				39F46A2F19808A04001C2020 /* Sources */,
+				39F46A3019808A04001C2020 /* Frameworks */,
+				39F46A3119808A04001C2020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLStats;
+			productName = LoLStats;
+			productReference = 39F46A3319808A04001C2020 /* LoLStats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39F46A5319808A04001C2020 /* LoLStatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39F46A6819808A04001C2020 /* Build configuration list for PBXNativeTarget "LoLStatsTests" */;
+			buildPhases = (
+				39F46A5019808A04001C2020 /* Sources */,
+				39F46A5119808A04001C2020 /* Frameworks */,
+				39F46A5219808A04001C2020 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39F46A5A19808A04001C2020 /* PBXTargetDependency */,
+			);
+			name = LoLStatsTests;
+			productName = LoLStatsTests;
+			productReference = 39F46A5419808A04001C2020 /* LoLStatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39F46A2B19808A03001C2020 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Christopher Fu";
+				TargetAttributes = {
+					39F46A5319808A04001C2020 = {
+						TestTargetID = 39F46A3219808A04001C2020;
+					};
+				};
+			};
+			buildConfigurationList = 39F46A2E19808A04001C2020 /* Build configuration list for PBXProject "LoLStats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39F46A2A19808A03001C2020;
+			productRefGroup = 39F46A3419808A04001C2020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39F46A3219808A04001C2020 /* LoLStats */,
+				39F46A5319808A04001C2020 /* LoLStatsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39F46A3119808A04001C2020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A4F19808A04001C2020 /* Images.xcassets in Resources */,
+				39F46A4119808A04001C2020 /* InfoPlist.strings in Resources */,
+				39F46A4A19808A04001C2020 /* Main.storyboard in Resources */,
+				39F46A6F19821AFC001C2020 /* 20.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F46A5219808A04001C2020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A6019808A04001C2020 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39F46A2F19808A04001C2020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A6D198218A2001C2020 /* CFSummonerDetailViewController.m in Sources */,
+				39F46A4319808A04001C2020 /* main.m in Sources */,
+				39F46A7219821D01001C2020 /* UIImage+UIImageAdditions.m in Sources */,
+				39F46A4719808A04001C2020 /* CFAppDelegate.m in Sources */,
+				39F46A4D19808A04001C2020 /* CFSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39F46A5019808A04001C2020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F46A6219808A04001C2020 /* LoLStatsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39F46A5A19808A04001C2020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39F46A3219808A04001C2020 /* LoLStats */;
+			targetProxy = 39F46A5919808A04001C2020 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39F46A3F19808A04001C2020 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39F46A4019808A04001C2020 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39F46A4819808A04001C2020 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39F46A4919808A04001C2020 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39F46A5E19808A04001C2020 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39F46A5F19808A04001C2020 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39F46A6319808A04001C2020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39F46A6419808A04001C2020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39F46A6619808A04001C2020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLStats/LoLStats-Prefix.pch";
+				INFOPLIST_FILE = "LoLStats/LoLStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39F46A6719808A04001C2020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLStats/LoLStats-Prefix.pch";
+				INFOPLIST_FILE = "LoLStats/LoLStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		39F46A6919808A04001C2020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoLStats.app/LoLStats";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLStats/LoLStats-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LoLStatsTests/LoLStatsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		39F46A6A19808A04001C2020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoLStats.app/LoLStats";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLStats/LoLStats-Prefix.pch";
+				INFOPLIST_FILE = "LoLStatsTests/LoLStatsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39F46A2E19808A04001C2020 /* Build configuration list for PBXProject "LoLStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F46A6319808A04001C2020 /* Debug */,
+				39F46A6419808A04001C2020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39F46A6519808A04001C2020 /* Build configuration list for PBXNativeTarget "LoLStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F46A6619808A04001C2020 /* Debug */,
+				39F46A6719808A04001C2020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39F46A6819808A04001C2020 /* Build configuration list for PBXNativeTarget "LoLStatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F46A6919808A04001C2020 /* Debug */,
+				39F46A6A19808A04001C2020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39F46A2B19808A03001C2020 /* Project object */;
+}
