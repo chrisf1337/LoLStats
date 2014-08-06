@@ -130,6 +130,19 @@
 		3948A3A31989EFC5000440DC /* CDFGameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A21989EFC5000440DC /* CDFGameDetailViewController.m */; };
 		3948A3A6199087BF000440DC /* CDFWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A5199087BE000440DC /* CDFWatchListViewController.m */; };
 		3948A3A91991CD74000440DC /* CDFAdderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A81991CD74000440DC /* CDFAdderViewController.m */; };
+		3948A3D31992E7BC000440DC /* SummonerBarrier.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3C61992E7BC000440DC /* SummonerBarrier.png */; };
+		3948A3D41992E7BC000440DC /* SummonerBoost.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3C71992E7BC000440DC /* SummonerBoost.png */; };
+		3948A3D51992E7BC000440DC /* SummonerClairvoyance.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3C81992E7BC000440DC /* SummonerClairvoyance.png */; };
+		3948A3D61992E7BC000440DC /* SummonerDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3C91992E7BC000440DC /* SummonerDot.png */; };
+		3948A3D71992E7BC000440DC /* SummonerExhaust.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CA1992E7BC000440DC /* SummonerExhaust.png */; };
+		3948A3D81992E7BC000440DC /* SummonerFlash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CB1992E7BC000440DC /* SummonerFlash.png */; };
+		3948A3D91992E7BC000440DC /* SummonerHaste.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CC1992E7BC000440DC /* SummonerHaste.png */; };
+		3948A3DA1992E7BC000440DC /* SummonerHeal.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CD1992E7BC000440DC /* SummonerHeal.png */; };
+		3948A3DB1992E7BC000440DC /* SummonerMana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CE1992E7BC000440DC /* SummonerMana.png */; };
+		3948A3DC1992E7BC000440DC /* SummonerOdinGarrison.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3CF1992E7BC000440DC /* SummonerOdinGarrison.png */; };
+		3948A3DD1992E7BC000440DC /* SummonerRevive.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3D01992E7BC000440DC /* SummonerRevive.png */; };
+		3948A3DE1992E7BC000440DC /* SummonerSmite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3D11992E7BC000440DC /* SummonerSmite.png */; };
+		3948A3DF1992E7BC000440DC /* SummonerTeleport.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3D21992E7BC000440DC /* SummonerTeleport.png */; };
 		39818FB719836CE000E4E048 /* CDFSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = 39818FB619836CE000E4E048 /* CDFSummoner.m */; };
 		398192391987357A00E4E048 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 398191641987357900E4E048 /* 0.png */; };
 		3981923A1987357A00E4E048 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 398191651987357900E4E048 /* 1.png */; };
@@ -500,6 +513,19 @@
 		3948A3A5199087BE000440DC /* CDFWatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFWatchListViewController.m; sourceTree = "<group>"; };
 		3948A3A71991CD74000440DC /* CDFAdderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFAdderViewController.h; sourceTree = "<group>"; };
 		3948A3A81991CD74000440DC /* CDFAdderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAdderViewController.m; sourceTree = "<group>"; };
+		3948A3C61992E7BC000440DC /* SummonerBarrier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerBarrier.png; sourceTree = "<group>"; };
+		3948A3C71992E7BC000440DC /* SummonerBoost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerBoost.png; sourceTree = "<group>"; };
+		3948A3C81992E7BC000440DC /* SummonerClairvoyance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerClairvoyance.png; sourceTree = "<group>"; };
+		3948A3C91992E7BC000440DC /* SummonerDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerDot.png; sourceTree = "<group>"; };
+		3948A3CA1992E7BC000440DC /* SummonerExhaust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerExhaust.png; sourceTree = "<group>"; };
+		3948A3CB1992E7BC000440DC /* SummonerFlash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerFlash.png; sourceTree = "<group>"; };
+		3948A3CC1992E7BC000440DC /* SummonerHaste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerHaste.png; sourceTree = "<group>"; };
+		3948A3CD1992E7BC000440DC /* SummonerHeal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerHeal.png; sourceTree = "<group>"; };
+		3948A3CE1992E7BC000440DC /* SummonerMana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerMana.png; sourceTree = "<group>"; };
+		3948A3CF1992E7BC000440DC /* SummonerOdinGarrison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerOdinGarrison.png; sourceTree = "<group>"; };
+		3948A3D01992E7BC000440DC /* SummonerRevive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerRevive.png; sourceTree = "<group>"; };
+		3948A3D11992E7BC000440DC /* SummonerSmite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerSmite.png; sourceTree = "<group>"; };
+		3948A3D21992E7BC000440DC /* SummonerTeleport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SummonerTeleport.png; sourceTree = "<group>"; };
 		39818FB419832F4300E4E048 /* apikey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apikey.h; sourceTree = "<group>"; };
 		39818FB519836CE000E4E048 /* CDFSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFSummoner.h; sourceTree = "<group>"; };
 		39818FB619836CE000E4E048 /* CDFSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFSummoner.m; sourceTree = "<group>"; };
@@ -891,6 +917,26 @@
 			path = "Champion Icons";
 			sourceTree = "<group>";
 		};
+		3948A3C51992E7BC000440DC /* Summoner Spell Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3948A3C61992E7BC000440DC /* SummonerBarrier.png */,
+				3948A3C71992E7BC000440DC /* SummonerBoost.png */,
+				3948A3C81992E7BC000440DC /* SummonerClairvoyance.png */,
+				3948A3C91992E7BC000440DC /* SummonerDot.png */,
+				3948A3CA1992E7BC000440DC /* SummonerExhaust.png */,
+				3948A3CB1992E7BC000440DC /* SummonerFlash.png */,
+				3948A3CC1992E7BC000440DC /* SummonerHaste.png */,
+				3948A3CD1992E7BC000440DC /* SummonerHeal.png */,
+				3948A3CE1992E7BC000440DC /* SummonerMana.png */,
+				3948A3CF1992E7BC000440DC /* SummonerOdinGarrison.png */,
+				3948A3D01992E7BC000440DC /* SummonerRevive.png */,
+				3948A3D11992E7BC000440DC /* SummonerSmite.png */,
+				3948A3D21992E7BC000440DC /* SummonerTeleport.png */,
+			);
+			path = "Summoner Spell Icons";
+			sourceTree = "<group>";
+		};
 		398191631987357900E4E048 /* Summoner Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1173,6 +1219,7 @@
 		39F46A3D19808A04001C2020 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3948A3C51992E7BC000440DC /* Summoner Spell Icons */,
 				3948A2AE1989D2CF000440DC /* Champion Icons */,
 				398191631987357900E4E048 /* Summoner Icons */,
 				39F46A3E19808A04001C2020 /* LoLStats-Info.plist */,
@@ -1292,6 +1339,7 @@
 				398192F21987357A00E4E048 /* 660.png in Resources */,
 				398193071987357A00E4E048 /* 681.png in Resources */,
 				3981928B1987357A00E4E048 /* 558.png in Resources */,
+				3948A3DC1992E7BC000440DC /* SummonerOdinGarrison.png in Resources */,
 				398192961987357A00E4E048 /* 569.png in Resources */,
 				398193061987357A00E4E048 /* 680.png in Resources */,
 				398192601987357A00E4E048 /* 515.png in Resources */,
@@ -1336,6 +1384,7 @@
 				398192A11987357A00E4E048 /* 580.png in Resources */,
 				3981925B1987357A00E4E048 /* 510.png in Resources */,
 				3948A3421989D2D0000440DC /* Gragas.png in Resources */,
+				3948A3DE1992E7BC000440DC /* SummonerSmite.png in Resources */,
 				3948A3491989D2D0000440DC /* Jax.png in Resources */,
 				3948A3931989D2D0000440DC /* Warwick.png in Resources */,
 				398192E91987357A00E4E048 /* 651.png in Resources */,
@@ -1364,6 +1413,7 @@
 				398192B21987357A00E4E048 /* 597.png in Resources */,
 				398192A31987357A00E4E048 /* 582.png in Resources */,
 				398192F01987357A00E4E048 /* 658.png in Resources */,
+				3948A3D81992E7BC000440DC /* SummonerFlash.png in Resources */,
 				398192E11987357A00E4E048 /* 643.png in Resources */,
 				3948A3561989D2D0000440DC /* Leona.png in Resources */,
 				3948A3911989D2D0000440DC /* Vladimir.png in Resources */,
@@ -1380,6 +1430,7 @@
 				398192E31987357A00E4E048 /* 645.png in Resources */,
 				3981929A1987357A00E4E048 /* 573.png in Resources */,
 				398192D91987357A00E4E048 /* 635.png in Resources */,
+				3948A3D71992E7BC000440DC /* SummonerExhaust.png in Resources */,
 				398192A01987357A00E4E048 /* 579.png in Resources */,
 				398192DB1987357A00E4E048 /* 637.png in Resources */,
 				398192FF1987357A00E4E048 /* 673.png in Resources */,
@@ -1449,6 +1500,7 @@
 				3981929E1987357A00E4E048 /* 577.png in Resources */,
 				3948A3811989D2D0000440DC /* Taric.png in Resources */,
 				398192A51987357A00E4E048 /* 584.png in Resources */,
+				3948A3D61992E7BC000440DC /* SummonerDot.png in Resources */,
 				398192CB1987357A00E4E048 /* 621.png in Resources */,
 				3948A37C1989D2D0000440DC /* Sona.png in Resources */,
 				3948A38C1989D2D0000440DC /* Vayne.png in Resources */,
@@ -1457,8 +1509,10 @@
 				3948A3941989D2D0000440DC /* Xerath.png in Resources */,
 				3948A3751989D2D0000440DC /* Shaco.png in Resources */,
 				398192851987357A00E4E048 /* 552.png in Resources */,
+				3948A3D31992E7BC000440DC /* SummonerBarrier.png in Resources */,
 				398192911987357A00E4E048 /* 564.png in Resources */,
 				3948A3861989D2D0000440DC /* Tryndamere.png in Resources */,
+				3948A3D91992E7BC000440DC /* SummonerHaste.png in Resources */,
 				3948A38E1989D2D0000440DC /* Velkoz.png in Resources */,
 				3948A32D1989D2D0000440DC /* Ashe.png in Resources */,
 				3948A36B1989D2D0000440DC /* Pantheon.png in Resources */,
@@ -1471,6 +1525,7 @@
 				3948A35A1989D2D0000440DC /* Lux.png in Resources */,
 				398192731987357A00E4E048 /* 534.png in Resources */,
 				398192CA1987357A00E4E048 /* 620.png in Resources */,
+				3948A3D41992E7BC000440DC /* SummonerBoost.png in Resources */,
 				398192701987357A00E4E048 /* 531.png in Resources */,
 				3981930D1987357A00E4E048 /* 9.png in Resources */,
 				3948A3991989D2D0000440DC /* Zed.png in Resources */,
@@ -1483,6 +1538,7 @@
 				3981927D1987357A00E4E048 /* 544.png in Resources */,
 				3981924C1987357A00E4E048 /* 26.png in Resources */,
 				3948A3901989D2D0000440DC /* Viktor.png in Resources */,
+				3948A3DD1992E7BC000440DC /* SummonerRevive.png in Resources */,
 				398192451987357A00E4E048 /* 2.png in Resources */,
 				398192FB1987357A00E4E048 /* 669.png in Resources */,
 				3948A3381989D2D0000440DC /* DrMundo.png in Resources */,
@@ -1497,6 +1553,7 @@
 				398192541987357A00E4E048 /* 503.png in Resources */,
 				398192D31987357A00E4E048 /* 629.png in Resources */,
 				3948A38B1989D2D0000440DC /* Varus.png in Resources */,
+				3948A3DF1992E7BC000440DC /* SummonerTeleport.png in Resources */,
 				3948A3791989D2D0000440DC /* Sion.png in Resources */,
 				3948A3641989D2D0000440DC /* Nasus.png in Resources */,
 				398192651987357A00E4E048 /* 520.png in Resources */,
@@ -1534,7 +1591,9 @@
 				3948A3321989D2D0000440DC /* Cassiopeia.png in Resources */,
 				398192D11987357A00E4E048 /* 627.png in Resources */,
 				398192AD1987357A00E4E048 /* 592.png in Resources */,
+				3948A3DB1992E7BC000440DC /* SummonerMana.png in Resources */,
 				3948A3341989D2D0000440DC /* Corki.png in Resources */,
+				3948A3DA1992E7BC000440DC /* SummonerHeal.png in Resources */,
 				398192861987357A00E4E048 /* 553.png in Resources */,
 				398193011987357A00E4E048 /* 675.png in Resources */,
 				3948A34B1989D2D0000440DC /* Jinx.png in Resources */,
@@ -1577,6 +1636,7 @@
 				3981925C1987357A00E4E048 /* 511.png in Resources */,
 				398192691987357A00E4E048 /* 524.png in Resources */,
 				3948A3541989D2D0000440DC /* Leblanc.png in Resources */,
+				3948A3D51992E7BC000440DC /* SummonerClairvoyance.png in Resources */,
 				3948A34E1989D2D0000440DC /* Kassadin.png in Resources */,
 				398192A21987357A00E4E048 /* 581.png in Resources */,
 				3981928F1987357A00E4E048 /* 562.png in Resources */,

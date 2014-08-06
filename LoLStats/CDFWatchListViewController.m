@@ -21,6 +21,7 @@
 
 @property (nonatomic) CDFSummoner *selectedSummoner;
 @property (nonatomic) NSURLConnection *championIdRequest;
+@property (nonatomic) NSURLConnection *summonerSpellInfoRequest;
 @property (nonatomic) NSURLConnection *summonerStatsSummaryRequest;
 @property (nonatomic) NSURLConnection *summonerLeagueEntriesRequest;
 
@@ -74,6 +75,10 @@
                                @"https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=%@",
                                API_KEY];
     self.championIdRequest = [self performRequestWithURLString:requestString];
+    requestString = [NSString stringWithFormat:
+                     @"https://na.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=%@",
+                     API_KEY];
+    self.summonerSpellInfoRequest = [self performRequestWithURLString:requestString];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -221,6 +226,24 @@
             }
         }
     }
+    else if (connection == self.summonerSpellInfoRequest)
+    {
+        NSDictionary *summonerSpellsDict = [NSJSONSerialization JSONObjectWithData:self.responseData
+                                                                           options:kNilOptions
+                                                                             error:&error];
+        if (summonerSpellsDict != nil)
+        {
+            self.summonerSpells = [NSMutableDictionary dictionaryWithDictionary:[summonerSpellsDict objectForKey:@"data"]];
+            NSArray *keys = [self.summonerSpells allKeys];
+            for (NSString *key in keys)
+            {
+                NSDictionary *info = [self.summonerSpells objectForKey:key];
+                [self.summonerSpells removeObjectForKey:key];
+                [self.summonerSpells setObject:info forKey:[info objectForKey:@"id"]];
+            }
+        }
+    }
+
 }
 
 
@@ -273,6 +296,7 @@
         CDFSummonerDetailViewController *summonerDetailController = (CDFSummonerDetailViewController *)segue.destinationViewController;
         summonerDetailController.championIds = self.championIds;
         summonerDetailController.summoner = self.selectedSummoner;
+        summonerDetailController.summonerSpells = self.summonerSpells;
     }
     else if ([segue.identifier isEqualToString:@"displayAdder"])
     {

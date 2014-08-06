@@ -15,8 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnEdit;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnAdd;
+
 @property (nonatomic) NSMutableArray *watchList;
 @property (nonatomic) NSMutableDictionary *championIds;
+@property (nonatomic) NSMutableDictionary *summonerSpells;
 
 @property (nonatomic) BOOL isEditing;
 

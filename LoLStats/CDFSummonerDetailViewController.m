@@ -253,6 +253,7 @@
     {
         CDFGameDetailViewController *gameDetailController = (CDFGameDetailViewController *)segue.destinationViewController;
         gameDetailController.championIds = self.championIds;
+        gameDetailController.summonerSpells = self.summonerSpells;
         gameDetailController.summoner = self.summoner;
         gameDetailController.gameInfo = self.summoner.recentGames[self.selectedGame.row];
     }

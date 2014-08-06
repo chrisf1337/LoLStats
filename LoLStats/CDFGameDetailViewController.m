@@ -49,6 +49,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Game Detail";
+    NSLog(@"%@", self.summonerSpells);
     self.responseData = [[NSMutableData alloc] init];
     self.gameTeammates = [[NSMutableArray alloc] init];
     self.gameOpponents = [[NSMutableArray alloc] init];
@@ -70,6 +71,20 @@
     self.imgSummonerIcon.image = [UIImage imageNamed:championIconPath
                                         scaledToSize:CGSizeMake(self.imgSummonerIcon.bounds.size.width,
                                                                 self.imgSummonerIcon.bounds.size.height)];
+    NSNumber *summonerSpell1Id = [self.gameInfo objectForKey:@"spell1"];
+    NSNumber *summonerSpell2Id = [self.gameInfo objectForKey:@"spell2"];
+    NSString *summonerSpell1Key = [(NSDictionary *)[self.summonerSpells objectForKey:summonerSpell1Id]
+                                   objectForKey:@"key"];
+    NSString *summonerSpell2Key = [(NSDictionary *)[self.summonerSpells objectForKey:summonerSpell2Id]
+                                   objectForKey:@"key"];
+    NSString *summonerSpell1IconPath = [NSString stringWithFormat:@"%@.png", summonerSpell1Key];
+    NSString *summonerSpell2IconPath = [NSString stringWithFormat:@"%@.png", summonerSpell2Key];
+    self.imgSummonerSpell1.image = [UIImage imageNamed:summonerSpell1IconPath
+                                          scaledToSize:CGSizeMake(self.imgSummonerSpell1.bounds.size.width,
+                                                                  self.imgSummonerSpell1.bounds.size.height)];
+    self.imgSummonerSpell2.image = [UIImage imageNamed:summonerSpell2IconPath
+                                          scaledToSize:CGSizeMake(self.imgSummonerSpell2.bounds.size.width,
+                                                                  self.imgSummonerSpell2.bounds.size.height)];
     int gameLength = [(NSNumber *)[[self.gameInfo objectForKey:@"stats"] objectForKey:@"timePlayed"] intValue];
     int gameLengthMin = gameLength / 60;
     int gameLengthSec = gameLength % 60;

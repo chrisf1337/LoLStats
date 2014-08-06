@@ -27,5 +27,6 @@
 //@property (nonatomic) NSArray *summonerRecentGames;
 
 @property (nonatomic) NSDictionary *championIds;
+@property (nonatomic) NSDictionary *summonerSpells;
 
 @end

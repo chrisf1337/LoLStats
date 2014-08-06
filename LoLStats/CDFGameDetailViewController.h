@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblSummonerName;
 @property (weak, nonatomic) IBOutlet UIImageView *imgSummonerIcon;
+@property (weak, nonatomic) IBOutlet UIImageView *imgSummonerSpell1;
+@property (weak, nonatomic) IBOutlet UIImageView *imgSummonerSpell2;
 @property (weak, nonatomic) IBOutlet UILabel *lblChampionName;
 @property (weak, nonatomic) IBOutlet UILabel *lblWinLoss;
 @property (weak, nonatomic) IBOutlet UITableView *tblGameStats;
@@ -28,5 +30,6 @@
 
 @property (nonatomic) NSDictionary *gameInfo;
 @property (nonatomic) NSDictionary *championIds;
+@property (nonatomic) NSDictionary *summonerSpells;
 
 @end

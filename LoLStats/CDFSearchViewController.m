@@ -17,6 +17,7 @@
 
 @property (nonatomic) NSMutableData *responseData;
 @property (nonatomic) NSURLConnection *summonerInfoRequest;
+@property (nonatomic) NSURLConnection *summonerSpellInfoRequest;
 @property (nonatomic) NSURLConnection *summonerStatsSummaryRequest;
 @property (nonatomic) NSURLConnection *summonerLeagueEntriesRequest;
 
@@ -45,6 +46,10 @@
                                @"https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=%@",
                                API_KEY];
     self.championIdRequest = [self performRequestWithURLString:requestString];
+    requestString = [NSString stringWithFormat:
+                     @"https://na.api.pvp.net/api/lol/static-data/na/v1.2/summoner-spell?api_key=%@",
+                     API_KEY];
+    self.summonerSpellInfoRequest = [self performRequestWithURLString:requestString];
 }
 
 - (void)dismissKeyboard
@@ -207,6 +212,23 @@
             }
         }
     }
+    else if (connection == self.summonerSpellInfoRequest)
+    {
+        NSDictionary *summonerSpellsDict = [NSJSONSerialization JSONObjectWithData:self.responseData
+                                                                           options:kNilOptions
+                                                                             error:&error];
+        if (summonerSpellsDict != nil)
+        {
+            self.summonerSpells = [NSMutableDictionary dictionaryWithDictionary:[summonerSpellsDict objectForKey:@"data"]];
+            NSArray *keys = [self.summonerSpells allKeys];
+            for (NSString *key in keys)
+            {
+                NSDictionary *info = [self.summonerSpells objectForKey:key];
+                [self.summonerSpells removeObjectForKey:key];
+                [self.summonerSpells setObject:info forKey:[info objectForKey:@"id"]];
+            }
+        }
+    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -234,6 +256,7 @@
         CDFSummonerDetailViewController *summonerDetail = (CDFSummonerDetailViewController *)segue.destinationViewController;
         summonerDetail.summoner = self.summoner;
         summonerDetail.championIds = self.championIds;
+        summonerDetail.summonerSpells = self.summonerSpells;
         NSLog(@"%@", self.summoner);
         [self.activityIndicator stopAnimating];
         self.searchField.text = @"";

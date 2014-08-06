@@ -25,6 +25,7 @@
 @property (nonatomic) NSArray *summonerRecentGames;
 
 @property (nonatomic) NSMutableDictionary *championIds;
+@property (nonatomic) NSMutableDictionary *summonerSpells;
 
 - (IBAction)searchTapped:(id)sender;
 
