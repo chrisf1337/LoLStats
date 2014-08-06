@@ -22,9 +22,9 @@
 
 @property (nonatomic) CDFSummoner *summoner;
 
-@property (nonatomic) NSDictionary *summonerObject;
-@property (nonatomic) NSDictionary *summonerStatsSummary;
-@property (nonatomic) NSArray *summonerRecentGames;
+//@property (nonatomic) NSDictionary *summonerObject;
+//@property (nonatomic) NSDictionary *summonerStatsSummary;
+//@property (nonatomic) NSArray *summonerRecentGames;
 
 @property (nonatomic) NSDictionary *championIds;
 

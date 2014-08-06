@@ -28,8 +28,10 @@
 @property (nonatomic) NSMutableArray *recentGames;
 
 + (instancetype)summonerWithName:(NSString *)name level:(NSNumber *)level idNumber:(NSNumber *)number;
++ (instancetype)summonerFromDictionary:(NSDictionary *)dict;
 
 - (instancetype)initWithName:(NSString *)name level:(NSNumber *)level idNumber:(NSNumber *)number;
+- (NSDictionary *)toDictionary;
 - (NSString *)description;
 
 @end

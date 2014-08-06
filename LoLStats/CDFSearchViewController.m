@@ -22,6 +22,10 @@
 
 @property (nonatomic) NSURLConnection *championIdRequest;
 
+- (void)searchForSummoner:(NSString *)summonerName;
+
+- (void)dismissKeyboard;
+
 @end
 
 @implementation CDFSearchViewController
@@ -35,10 +39,17 @@
 //    self.scrollView.layer.borderWidth = 1.0f;
 //    self.summonerName = [[NSMutableString alloc] init];
     self.title = @"Search";
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
     NSString *requestString = [NSString stringWithFormat:
                                @"https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?api_key=%@",
                                API_KEY];
     self.championIdRequest = [self performRequestWithURLString:requestString];
+}
+
+- (void)dismissKeyboard
+{
+    [self.searchField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +62,7 @@
 
 - (void)searchForSummoner:(NSString *)summonerName;
 {
+    [self.activityIndicator startAnimating];
     NSString *requestString = [NSString stringWithFormat:
                                @"https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/%@?api_key=%@",
                                summonerName, API_KEY];
@@ -61,7 +73,6 @@
 {
     [self.searchField resignFirstResponder];
     NSString *summonerName = [NSMutableString stringWithFormat:@"%@", self.searchField.text];
-    self.searchField.text = @"";
     [self searchForSummoner:summonerName];
 }
 
@@ -74,6 +85,8 @@
         {
             [self showAlertWithTitle:@"Summoner not found!"
                              message:@"The summoner name you have entered was not found."];
+            self.searchField.text = @"";
+            [self.activityIndicator stopAnimating];
         }
         else if (connection == self.summonerLeagueEntriesRequest)
         {
@@ -100,7 +113,9 @@
     NSError *error;
     if (connection == self.summonerInfoRequest)
     {
-        self.summonerInfo = [NSJSONSerialization JSONObjectWithData:self.responseData options:kNilOptions error:&error];
+        self.summonerInfo = [NSJSONSerialization JSONObjectWithData:self.responseData
+                                                            options:kNilOptions
+                                                              error:&error];
         if (self.summonerInfo != nil)
         {
             self.summonerObject = [self.summonerInfo objectForKey:[self.summonerInfo allKeys][0]];
@@ -172,7 +187,8 @@
             self.summoner.soloQueueLeagueTier = @"Unranked";
             self.summoner.soloQueueLeagueDivision = @"";
         }
-        [self performSegueWithIdentifier:@"displaySummonerDetail" sender:self];
+
+        [self performSegueWithIdentifier:@"displaySummonerDetailFromSearch" sender:self];
     }
     else if (connection == self.championIdRequest)
     {
@@ -197,7 +213,6 @@
 {
     [textField resignFirstResponder];
     NSString *summonerName = [NSMutableString stringWithFormat:@"%@", self.searchField.text];
-    textField.text = @"";
     [self searchForSummoner:summonerName];
     return YES;
 }
@@ -214,15 +229,20 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"displaySummonerDetail"])
+    if ([segue.identifier isEqualToString:@"displaySummonerDetailFromSearch"])
     {
         CDFSummonerDetailViewController *summonerDetail = (CDFSummonerDetailViewController *)segue.destinationViewController;
-        summonerDetail.summonerObject = self.summonerObject;
-        summonerDetail.summonerRecentGames = self.summoner.recentGames;
         summonerDetail.summoner = self.summoner;
         summonerDetail.championIds = self.championIds;
         NSLog(@"%@", self.summoner);
+        [self.activityIndicator stopAnimating];
+        self.searchField.text = @"";
     }
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 

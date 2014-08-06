@@ -128,6 +128,8 @@
 		3948A39C1989D2D0000440DC /* Zyra.png in Resources */ = {isa = PBXBuildFile; fileRef = 3948A3251989D2D0000440DC /* Zyra.png */; };
 		3948A3A01989DA2B000440DC /* UIViewController+UIViewControllerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A39F1989DA2B000440DC /* UIViewController+UIViewControllerAdditions.m */; };
 		3948A3A31989EFC5000440DC /* CDFGameDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A21989EFC5000440DC /* CDFGameDetailViewController.m */; };
+		3948A3A6199087BF000440DC /* CDFWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A5199087BE000440DC /* CDFWatchListViewController.m */; };
+		3948A3A91991CD74000440DC /* CDFAdderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948A3A81991CD74000440DC /* CDFAdderViewController.m */; };
 		39818FB719836CE000E4E048 /* CDFSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = 39818FB619836CE000E4E048 /* CDFSummoner.m */; };
 		398192391987357A00E4E048 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 398191641987357900E4E048 /* 0.png */; };
 		3981923A1987357A00E4E048 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 398191651987357900E4E048 /* 1.png */; };
@@ -494,6 +496,10 @@
 		3948A39F1989DA2B000440DC /* UIViewController+UIViewControllerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewControllerAdditions.m"; sourceTree = "<group>"; };
 		3948A3A11989EFC5000440DC /* CDFGameDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFGameDetailViewController.h; sourceTree = "<group>"; };
 		3948A3A21989EFC5000440DC /* CDFGameDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFGameDetailViewController.m; sourceTree = "<group>"; };
+		3948A3A4199087BE000440DC /* CDFWatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFWatchListViewController.h; sourceTree = "<group>"; };
+		3948A3A5199087BE000440DC /* CDFWatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFWatchListViewController.m; sourceTree = "<group>"; };
+		3948A3A71991CD74000440DC /* CDFAdderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFAdderViewController.h; sourceTree = "<group>"; };
+		3948A3A81991CD74000440DC /* CDFAdderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFAdderViewController.m; sourceTree = "<group>"; };
 		39818FB419832F4300E4E048 /* apikey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apikey.h; sourceTree = "<group>"; };
 		39818FB519836CE000E4E048 /* CDFSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFSummoner.h; sourceTree = "<group>"; };
 		39818FB619836CE000E4E048 /* CDFSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFSummoner.m; sourceTree = "<group>"; };
@@ -1139,6 +1145,10 @@
 			isa = PBXGroup;
 			children = (
 				39F46A4819808A04001C2020 /* Main.storyboard */,
+				3948A3A71991CD74000440DC /* CDFAdderViewController.h */,
+				3948A3A81991CD74000440DC /* CDFAdderViewController.m */,
+				3948A3A4199087BE000440DC /* CDFWatchListViewController.h */,
+				3948A3A5199087BE000440DC /* CDFWatchListViewController.m */,
 				39F46A4519808A04001C2020 /* CDFAppDelegate.h */,
 				39F46A4619808A04001C2020 /* CDFAppDelegate.m */,
 				39F46A4B19808A04001C2020 /* CDFSearchViewController.h */,
@@ -1624,10 +1634,12 @@
 				39F46A6D198218A2001C2020 /* CDFSummonerDetailViewController.m in Sources */,
 				3948A3A31989EFC5000440DC /* CDFGameDetailViewController.m in Sources */,
 				39F46A4319808A04001C2020 /* main.m in Sources */,
+				3948A3A91991CD74000440DC /* CDFAdderViewController.m in Sources */,
 				39F46A7219821D01001C2020 /* UIImage+UIImageAdditions.m in Sources */,
 				39F46A4719808A04001C2020 /* CDFAppDelegate.m in Sources */,
 				39818FB719836CE000E4E048 /* CDFSummoner.m in Sources */,
 				39F46A4D19808A04001C2020 /* CDFSearchViewController.m in Sources */,
+				3948A3A6199087BF000440DC /* CDFWatchListViewController.m in Sources */,
 				3948A3A01989DA2B000440DC /* UIViewController+UIViewControllerAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

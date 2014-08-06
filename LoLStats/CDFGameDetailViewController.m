@@ -57,7 +57,8 @@
                              @"BOT_3x3": @"Bot",
                              @"ARAM_UNRANKED_5x5": @"ARAM",
                              @"RANKED_SOLO_5x5": @"Ranked",
-                             @"CAP_5x5": @"Dominion"};
+                             @"CAP_5x5": @"Dominion",
+                             @"RANKED_TEAM_5x5": @"Ranked 5s"};
     self.lblSummonerName.text = self.summoner.name;
     NSNumber *championId = [self.gameInfo objectForKey:@"championId"];
     int championLevel = [(NSNumber *)[[self.gameInfo objectForKey:@"stats"] objectForKey:@"level"] intValue];
@@ -353,25 +354,26 @@
             UITableViewCell *cell = [self.tblGameStats cellForRowAtIndexPath:
                                      [NSIndexPath indexPathForRow:0 inSection:0]];
             UILabel *value = (UILabel *)[cell viewWithTag:101];
+            NSDictionary *gameStats = [self.gameInfo objectForKey:@"stats"];
+            int kills = [(NSNumber *)[gameStats objectForKey:@"championsKilled"] intValue];
+            int deaths = [(NSNumber *)[gameStats objectForKey:@"numDeaths"] intValue];
+            int assists = [(NSNumber *)[gameStats objectForKey:@"assists"] intValue];
             if ([value.text rangeOfString:@"/"].location != NSNotFound)
             {
-                if (self.summoner.totalTrackedDeaths == 0)
+                if (deaths == 0)
                 {
                     value.text = @"Perfect:1";
                 }
                 else
                 {
-                    double kda = (double)(self.summoner.totalTrackedKills +
-                                          self.summoner.totalTrackedAssists) / self.summoner.totalTrackedDeaths;
+                    double kda = (double)(kills + assists) / deaths;
                     value.text = [NSString stringWithFormat:@"%.2f:1", kda];
                 }
             }
             else
             {
-                value.text = [NSString stringWithFormat:@"%.1f/%.1f/%.1f",
-                              (double)self.summoner.totalTrackedKills / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedDeaths / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedAssists / self.summoner.totalTrackedGames];
+                value.text = [NSString stringWithFormat:@"%d/%d/%d",
+                              kills, deaths, assists];
             }
             [self.tblGameStats deselectRowAtIndexPath:indexPath animated:YES];
         }

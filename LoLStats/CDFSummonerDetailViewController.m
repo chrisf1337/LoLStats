@@ -83,11 +83,20 @@
 
 - (void)buildSummonerStatsArray
 {
-    NSArray *summonerKDA = @[@"Average KDA:",
-                             [NSString stringWithFormat:@"%.1f/%.1f/%.1f",
-                              (double)self.summoner.totalTrackedKills / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedDeaths / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedAssists / self.summoner.totalTrackedGames]];
+    NSArray *summonerKDA;
+    if (self.summoner.totalTrackedGames == 0)
+    {
+        summonerKDA = @[@"Average KDA:", @"0/0/0"];
+    }
+    else
+    {
+        summonerKDA = @[@"Average KDA:",
+                        [NSString stringWithFormat:@"%.1f/%.1f/%.1f",
+                         (double)self.summoner.totalTrackedKills / self.summoner.totalTrackedGames,
+                         (double)self.summoner.totalTrackedDeaths / self.summoner.totalTrackedGames,
+                         (double)self.summoner.totalTrackedAssists / self.summoner.totalTrackedGames]];
+    }
+
     NSArray *summonerTrackedGames = @[@"Total tracked games:",
                                       [NSString stringWithFormat:@"%d", self.summoner.totalTrackedGames]];
     self.summonerStatsArray = @[summonerKDA, summonerTrackedGames];
@@ -215,10 +224,17 @@
             }
             else
             {
-                value.text = [NSString stringWithFormat:@"%.1f/%.1f/%.1f",
-                              (double)self.summoner.totalTrackedKills / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedDeaths / self.summoner.totalTrackedGames,
-                              (double)self.summoner.totalTrackedAssists / self.summoner.totalTrackedGames];
+                if (self.summoner.totalTrackedGames == 0)
+                {
+                    value.text = @"0/0/0";
+                }
+                else
+                {
+                    value.text = [NSString stringWithFormat:@"%.1f/%.1f/%.1f",
+                                  (double)self.summoner.totalTrackedKills / self.summoner.totalTrackedGames,
+                                  (double)self.summoner.totalTrackedDeaths / self.summoner.totalTrackedGames,
+                                  (double)self.summoner.totalTrackedAssists / self.summoner.totalTrackedGames];
+                }
             }
             [self.tblSummonerStats deselectRowAtIndexPath:indexPath animated:YES];
         }
